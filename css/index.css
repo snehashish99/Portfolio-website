@@ -10,6 +10,18 @@ span{
     border: 5px solid;
 }
 
+.cardFont{
+    overflow:auto;
+    font-size: 2rem;
+    background-color: gray;
+}
+
+.btm{
+    
+    bottom: 0px;
+    font-size: 40px;
+}
+
 .introImg{
     background-image: url("../images/intro.jpeg");
     height: 500px;

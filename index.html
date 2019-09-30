@@ -45,15 +45,17 @@
             </div>
             <div class="row">
                 <h1 class="shadow"> I am Snehashish Kalamkar</h1>
+                <p class="btm shadow">I am <span id="changing"></span></p>
             </div>
 
         </div>
         <div id="about" class="container-fluid bord aboutBackground">
             <h2 class="text-center">About Me</h2>
-            <div  style="padding:2px 20px 10px 20px">
+            <div style="padding:2px 20px 10px 20px">
                 <p>I am a student of kalyani Government Engineering college pursuing B.tech in Computer Science and
                     Engineering.
-                    I am a <span>front end web developer</span> and a <span>machine learning enthusiast</span>. I have also
+                    I am a <span>front end web developer</span> and a <span>machine learning enthusiast</span>. I have
+                    also
                     done some scriptng in python.
                     I like to play <span>video games</span> and <span>cricket</span>.
                 </p>
@@ -64,8 +66,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="card cardFont">
+                            <img src="images/small1.jpg" alt="Avatar" style=" height:70%">
+                            <div class="cont">
+                                <p>this is test</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card cardFont">
+                            <img src="images/small2.jpg" alt="Avatar" style="height:70%">
                             <div class="cont">
                                 <h4><b>Jane Doe</b></h4>
                                 <p>Interior Designer</p>
@@ -73,17 +83,8 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
-                            <div class="cont">
-                                <h4><b>Jane Doe</b></h4>
-                                <p>Interior Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="card cardFront">
+                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
                             <div class="cont">
                                 <h4><b>Jane Doe</b></h4>
                                 <p>Interior Designer</p>
@@ -93,8 +94,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="card cardFront">
+                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
                             <div class="cont">
                                 <h4><b>Jane Doe</b></h4>
                                 <p>Interior Designer</p>
@@ -102,8 +103,8 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="card cardFront">
+                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
                             <div class="cont">
                                 <h4><b>Jane Doe</b></h4>
                                 <p>Interior Designer</p>
@@ -111,8 +112,8 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
-                            <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="card cardFront">
+                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
                             <div class="cont">
                                 <h4><b>Jane Doe</b></h4>
                                 <p>Interior Designer</p>
@@ -141,7 +142,27 @@
             </footer>
         </div>
     </div>
+    <script type="text/javascript">
 
+        $(document).ready(function () {
+            myfunc();
+        });
+
+
+        var i = 0;
+        var txt = ["a front end dveloper", "a student", "ML enthusiast", "and a Gamer"];
+        var speed = 2000;
+        function myfunc() {
+            if(i<txt.length){
+                document.getElementById("changing").innerHTML=txt[i];
+                i++;
+                setTimeout(myfunc, speed);
+            }
+            if(i==txt.length)
+            {i=0;}
+        }
+
+    </script>
 </body>
 
 </html>
