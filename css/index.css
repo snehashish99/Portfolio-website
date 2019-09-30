@@ -1,83 +1,75 @@
-
-body {
-    background-color: #7e8580;
+body{
+    background-color: lightgray;
 }
 
-h1{
-    text-shadow: 2px 2px grey;
+span{
+    color: goldenrod;
 }
 
-.class1{
-    width: 95%;
-    background-color: #3f6b70;
+.bord{
+    border: 5px solid;
 }
 
-.roundedCorner {
-    border-radius: 10px;
+.introImg{
+    background-image: url("../images/intro.jpeg");
+    height: 500px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.welcomeJumbo{
-    margin: 6px 0 6px 0; 
-    background-color: #D5DBDB;
+.container{
+    margin-top: 0px;
 }
 
-.shadow{
-    box-shadow: 0 15px 10px 0;
+
+
+.bg-1{
+    color: #ffffff;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 20%;
+    width: 60%;
+    height: 200px;
     border-radius: 5px;
-    background-color: #D5DBDB;
-    padding: 2px 2px 2px 2px;
-    margin: 1px 3px 1px 3px;
-}
-
-.card:hover {
-    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
-    background-color: rgb(140, 157, 211);
-    width:24%;
-}
-
-.groupCard{
-    display: flex;
-    justify-content: space-around;
-}
-
-@media only screen and (max-width: 600px) {
-    .class1{
-        width: 100%;
-        background-color: #3f6b70;
-    }
-
-    .roundedCorner {
-        border-radius: 0px;
-    }
-
-    .welcomeJumbo{
-        margin: 6px 0 6px 0; 
-        background-color: #D5DBDB;
-    }
-    .groupCard{
-        display: block
-    }
-
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width: 100%;
-        border-radius: 5px;
-        background-color: #D5DBDB;
-        padding: 2px 2px 2px 2px;
-        margin: 5px 3px 5px 3px;
-    }
-    
-    .card:hover {
-        box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
-        background-color: rgb(140, 157, 211);
-        width:100%;
-    }
+    margin:5px auto 5px auto;
 }
   
+.card:hover {
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
+}
+
+.cont{
+    padding: 2px 16px;
+}
+
+.aboutBackground{
+   background-color: aliceblue;
+   font-size: 20px;
+}
+
+.workBackground{
+    background-image: url("../images/worksample.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+    text-align: center;
+}
+
+.shadow{
+    text-shadow: 2px 2px grey;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.minHeight{
+    min-height: 100px;
+}
