@@ -6,6 +6,25 @@ span{
     color: goldenrod;
 }
 
+.pd{
+    padding-top:4px;
+}
+
+.links{
+    background-color: green;
+    color: white;
+    padding: 6px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  
+  a:hover, a:active {
+    background-color: lightseagreen;
+  }
+
 .bord{
     border: 5px solid;
 }
@@ -65,7 +84,7 @@ span{
 }
 
 .workBackground{
-    background-image: url("../images/worksample.jpg");
+    background-color: #C4D1DC;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
