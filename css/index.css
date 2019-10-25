@@ -6,33 +6,22 @@ span{
     color: goldenrod;
 }
 
-.pd{
-    padding-top:4px;
-}
-
-.links{
-    background-color: green;
-    color: white;
-    padding: 6px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 6px;
-  }
-  
-  a:hover, a:active {
-    background-color: lightseagreen;
-  }
-
 .bord{
-    border: 5px solid;
+    border: 1px solid;
 }
 
-.cardFont{
-    overflow:auto;
-    font-size: 2rem;
+
+.cardStyle{
+    border: 2px outset;
+    border-radius: 6px;
+    margin: 6px auto 30px auto;
+    padding: 2px 2px 15px 2px;
     background-color: gray;
+    color: white;
+}
+
+.cardStyle:hover{
+    box-shadow: 0 0 15px rgba(33,33,33,.8);
 }
 
 .btm{
@@ -51,31 +40,8 @@ span{
     background-size: cover;
 }
 
-.container{
-    margin-top: 0px;
-}
-
-
-
 .bg-1{
     color: #ffffff;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 60%;
-    height: 200px;
-    border-radius: 5px;
-    margin:5px auto 5px auto;
-}
-  
-.card:hover {
-    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2);
-}
-
-.cont{
-    padding: 2px 16px;
 }
 
 .aboutBackground{
@@ -83,24 +49,12 @@ span{
    font-size: 20px;
 }
 
-.workBackground{
-    background-color: #C4D1DC;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 25px;
-    text-align: center;
-}
-
 .shadow{
     text-shadow: 2px 2px grey;
 }
 
+
+
 .alignCenter{
     text-align: center;
-}
-
-.minHeight{
-    min-height: 100px;
 }

@@ -11,34 +11,33 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mywebsite</title>
 
 </head>
 
 <body>
-    <div>
-        <div>
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Snehashish Kalamkar</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#worksample">My work</a></li>
-                            <li><a href="#about">About me</a></li>
-                            <li><a href="#contact">Contact me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Snehashish Kalamkar</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#worksample">My work</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div>
         <div id="home" class="container-fluid bg-1 text-center introImg">
             <div class="row">
                 <h1 class="shadow alignCenter">Hi!</h1>
@@ -47,12 +46,11 @@
                 <h1 class="shadow"> I am Snehashish Kalamkar</h1>
                 <p class="btm shadow">I am <span id="changing"></span></p>
             </div>
-
         </div>
         <div id="about" class="container-fluid bord aboutBackground">
-            <h2 class="text-center">About Me</h2>
+            <h2 class="text-center" data-aos="fade-right">About Me</h2>
             <div style="padding:2px 20px 10px 20px">
-                <p>I am a student of kalyani Government Engineering college pursuing B.tech in Computer Science and
+                <p data-aos="fade-left">I am a student of kalyani Government Engineering college pursuing B.tech in Computer Science and
                     Engineering.
                     I am a <span>front end web developer</span> and a <span>machine learning enthusiast</span>. I have
                     also
@@ -61,68 +59,58 @@
                 </p>
             </div>
         </div>
-        <div id="worksample" class="container-fluid workBackground">
-            <h2 class="text-center">My Work Samples</h2>
+        <div class="container-fluid bord">
+            <h2 class="text-center" data-aos="fade-right">Work Sample</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img class="pd" src="images/codeplayer.jpg" alt="Avatar" style=" height:70%">
-                            <div class="cont">
-                                <a class="links" href="https://snehashish99.github.io/codeplayer/" target="_blank">Codeplayer</a>
+                    <div class="col-sm-3">
+                        <div class="card cardStyle alignCenter" data-aos="fade-left">
+                            <img class="" src="images/codeplayer.jpg" width="70%" height="70%" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Codeplayer</h4>
+                                <p class="card-text">Codeplayer is an online tool to edit HTML and css. It displays the output of the html and css code in real time.</p>
+                                <a href="https://github.com/snehashish99/codeplayer" target="_blank"
+                                    class="btn btn-primary">See More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img src="" alt="Avatar" style="height:70%">
-                            <div class="cont">
-                                <h4><b>TEst</b></h4>
-                                <p>testr</p>
+                    <div class="col-sm-3">
+                        <div class="card cardStyle alignCenter" data-aos="fade-left">
+                            <img class="card-img-top" src="images/codeplayer.jpg" width="70%" height="70%"
+                                alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
-                            <div class="cont">
-                                <h4><b>TEst</b></h4>
-                                <p>TEst</p>
+                    <div class="col-sm-3">
+                        <div class="card cardStyle alignCenter" data-aos="fade-left">
+                            <img class="card-img-top" src="images/codeplayer.jpg" width="70%" height="70%"
+                                alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See More</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
-                            <div class="cont">
-                                <h4><b>TEst</b></h4>
-                                <p>TEstr</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
-                            <div class="cont">
-                                <h4><b>TEst</b></h4>
-                                <p>TEstr</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardFont">
-                            <img src="img_avatar2.png" alt="Avatar" style="height:70%">
-                            <div class="cont">
-                                <h4><b>TEst</b></h4>
-                                <p>TEstr</p>
+                    <div class="col-sm-3">
+                        <div class="card cardStyle alignCenter" data-aos="fade-left">
+                            <img class="card-img-top" src="images/codeplayer.jpg" width="70%" height="70%"
+                                alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">See More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div id="contact">
             <footer>
                 <h3 class="text-center">Contact</h3>
@@ -142,7 +130,12 @@
             </footer>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript">
+
+        AOS.init({
+            duration: 2000,
+        });
 
         $(document).ready(function () {
             myfunc();
@@ -153,14 +146,19 @@
         var txt = ["a front end dveloper", "a student", "ML enthusiast", "a Gamer"];
         var speed = 2000;
         function myfunc() {
-            if(i<txt.length){
-                document.getElementById("changing").innerHTML=txt[i];
+            if (i < txt.length) {
+                document.getElementById("changing").innerHTML = txt[i];
                 i++;
                 setTimeout(myfunc, speed);
             }
-            if(i==txt.length)
-            {i=0;}
+            if (i == txt.length) { i = 0; }
         }
+
+        $(".cardStyle").hover(function () {
+            $(this).css({ 'margin-top': '0px', 'color': 'yellow', "border-radius": "20px" });
+        }, function () {
+            $(this).css({ "margin-top": "6px", "color": "white", "border-radius": "6px" });
+        });
 
     </script>
 </body>
