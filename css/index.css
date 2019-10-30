@@ -12,12 +12,11 @@ span{
 
 
 .cardStyle{
-    border: 2px outset;
-    border-radius: 6px;
+    border-radius: 5px;
     margin: 6px auto 30px auto;
     padding: 2px 2px 15px 2px;
-    background-color: gray;
-    color: white;
+    background-color: lightsteelblue;
+    color: green;
 }
 
 .cardStyle:hover{
@@ -58,3 +57,9 @@ span{
 .alignCenter{
     text-align: center;
 }
+
+#contact{
+    background-color: lightgoldenrodyellow;
+    padding: 10px 0 20px 0;
+}
+
