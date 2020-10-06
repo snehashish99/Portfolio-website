@@ -1,162 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165664213-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-165664213-1');
-    </script>
-    <!--=====================================================-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Mywebsitess</title>
-
+    <title>Snehashish Kalamkar</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Snehashish Kalamkar</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#worksample">My work</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div>
-        <div id="home" class="container-fluid bg-1 text-center introImg">
-            <div class="row">
-                <h1 class="shadow alignCenter">Hi!</h1>
-            </div>
-            <div class="row">
-                <h1 class="shadow"> I am Snehashish Kalamkar</h1>
-                <p class="btm shadow"><span id="changing"></span></p>
-            </div>
+        <div id="topbar">
+            <nav>
+                <!-- Brand -->
+              
+                <!-- Toggler/collapsibe Button -->
+                <div>
+                    <div class="text-center">
+                        <span><i onclick="mob_men_toggle_menu()" class="fas fa-bars fa-2x" style="margin:10px;cursor:pointer;"></i></span>
+                    </div>
+                </div>
+              
+                <!-- Navbar links -->
+                <div id="mobile_menu" style="z-index:100;display: none;position: absolute;width: 100%;">
+                  <ul>
+                    <li onclick="goto_ele('about')">About</li>
+                    <li onclick="goto_ele('experience')">Experience</li>
+                    <li onclick="goto_ele('education')">Education</li>
+                    <li onclick="goto_ele('skills')">Skill</li>                    
+                    <li onclick="goto_ele('projects')">Projects</li>
+                  </ul>
+                </div>
+            </nav>                  
         </div>
-        <div id="about" class="container-fluid aboutBackground">
-            <h2 class="text-center">About Me</h2>
-            <div style="padding:2px 20px 10px 20px">
-                <p>
-                    <div class="alignCenter">
-                        I am a web developer.<br>
-                        I like to create responsive websites that work on a wide range of devices.<br>
-                        I am new to development and trying to learn something new everyday.<br>
+                    
+        <div class="d-flex">
+            <div class="left w-25 flex-fill text-center">
+                <div class="left-cen">
+                    <ul>
+                        <li onclick="goto_ele('about')">About</li>
+                        <li onclick="goto_ele('experience')">Experience</li>                        
+                        <li onclick="goto_ele('education')">Education</li>
+                        <li onclick="goto_ele('skills')">Skill</li>
+                        <li onclick="goto_ele('projects')">Project</li>
+                    </ul>
+                    <br><br>
+                    <div>
+                        <span class="left-icon"><a style="color: inherit;" href="https://www.linkedin.com/in/snehashish-kalamkar-155838167/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
+                        <span class="left-icon"><a style="color: inherit;" href="https://github.com/snehashish99"  target="_blank"><i class="fab fa-github fa-2x"></i></a></span>
                     </div>
-                </p>
+                </div>                
             </div>
-        </div>
-        <div id="worksample" class="container-fluid">
-            <h2 class="text-center">Work Sample</h2>
-            <div class="container">
-                <div class="row">
-                    <div style="height: 100%;" class="col-sm-3">
-                        <div class="card cardStyle alignCenter" data-aos="fade-up">
-                            <h4 class="card-title">Codeplayer</h4>
-                            <p class="card-text">Codeplayer is an online tool to edit HTML,CSS & JS. It displays the output of the written code in real time.</p>
-                            <a href="https://github.com/snehashish99/codeplayer" target="_blank"
-                                class="btn btn-primary">See More</a>
-                            <a href="https://snehashish.me/codeplayer/" class="btn btn-success">Live link</a>
-                        </div>
+            <div class="right w-75 flex-fill text-left p-4">  
+                <div class="text-center">
+                    <h1>SNEHASHISH KALAMKAR</h1>
+                    <h5>4th YEAR UNDERGRAD | WEB DEVELOPER | CODER</h5>
+                </div>
+                <br>
+                <div id="about" name="about">
+                    <p>
+                        I am a final year CSE undergraduate. My objectives are to build skills and gain experience
+                        through different avenues. I am always excited to learn new skills and quickly adapt myself
+                        to a new environment. I love web development.
+                    </p>
+                </div>
+                <div id="experience">
+                    <h3>EXPERIENCE</h3>
+                    <div class="experience-card">
+                        <p> 
+                            <span class="designation">Web Developer Intern(Fullstack)</span><br>
+                            <span class="comp-name">Reading Right</span>
+                            <span class="float-right"><small>(May‘20- Present)</small></span>
+                        </p>
+                        <p>
+                            Along with a team, I worked on both the frontend and backend to add new features and update 
+                            existing features on the content portal of the website.
+                        </p>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card cardStyle alignCenter" data-aos="fade-up">
-                            <h4 class="card-title">Book management application</h4>
-                            <p class="card-text">A console based book management application to keep record 
-                                of books using SQLite database.</p>
-                            <a href="https://github.com/snehashish99/book-records" class="btn btn-primary" target="_blank">See More</a>
-                        </div>
+                    <div class="experience-card">
+                        <p> 
+                            <span class="designation">Project Intern</span><br>
+                            <span class="comp-name">Openhouse</span>
+                            <span class="float-right"><small>(Feb‘20- Mar‘20)</small></span>
+                        </p>
+                        <p>
+                            I worked on the analytics part of the website for the admin. Used various javascript charting
+                             libraries for meaning representation of data.
+                        </p>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card cardStyle alignCenter" data-aos="fade-up">
-                            <h4 class="card-title">Covid-19 tracker</h4>
-                            <p class="card-text">Covid-19 tracking website with data from various states of India. 
-                                Also contains graphical illustrations made using javascript charting library</p>
-                            <a href="#" class="btn btn-primary">See More</a>
-                            <a href="" class="btn btn-success">Live link</a>
-                        </div>
+                </div>
+                <div id="education">
+                    <h3>EDUCATION</h3>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kalyani Government Engineering College</span><br>
+                            <span class="comp-name">B.Tech. in Computer Science & Engineering</span>
+                            <span class="float-right"><small>(2017- 2021)</small></span>
+                        </p>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card cardStyle alignCenter" data-aos="fade-up">
-                            <h4 class="card-title">Stone paper scissor game</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See More</a>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kendriya Vidyalaya No.2, Salt Lake</span><br>
+                            <span class="comp-name">Class 12 (CBSE) 92.7%</span>
+                            <span class="float-right"><small>(2017)</small></span>
+                        </p>
+                    </div>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kendriya Vidyalaya No.2, Salt Lake</span><br>
+                            <span class="comp-name">Class 10 (CBSE) 10 CGPA</span>
+                            <span class="float-right"><small>(2015)</small></span>
+                        </p>
+                    </div>
+                </div>
+                <div id="skills">
+                    <h3>SKILLS</h3>
+                    <div>
+                        <div>
+                            <h6>Programming Languages</h6>
+                            <br>
+                            <span class="skill-icon"><i class="fab fa-cuttlefish fa-2x">++</i></span>
+                            <span class="skill-icon"><i class="fab fa-python fa-2x"></i></span>
+                            <span class="skill-icon"><i class="fab fa-js-square fa-2x"></i></span>
+                        </div>
+                        <br><br>
+                        <div>
+                            <h6>Web</h6>
+                            <br>
+                            <span class="skill-text">Django</span>
+                            <span class="skill-text">JQuery</span>
+                            <span class="skill-text">Flask</span>
+                            <span class="skill-text">CSS</span>
+                            <span class="skill-text">HTML</span>
+                            <span class="skill-text">Bootstrap</span>
+                            <span class="skill-text">SQL</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="contact">
-            <footer>
-                <div style="height: 30px;" class="text-center">
-                    <div class="contactEmail">
-                        <span>Mail ID:</span>
-                        <button type="button" class="btn btn-default" style="display:inline">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        </button>
-                        <span>snehashish280999@gmail.com</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook fa-1x"
-                            style="color:black"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.github.com" target="_blank" class="fa fa-github fa"
-                            style="color:black"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin fa"
-                            style="color:black"></a>
+                <div id="projects">
+                    <h3>PROJECTS</h3>
+                    <div class="project-card">
+                        <p> 
+                            <span class="designation">COVID Tracker- <a href="http://covid.snehashish.me/" target="_blank">LIVE</a></span><br>
+                            <span class="comp-name">Tech Stack- Python, HTML, Bootstrap, Javascript</span>
+                            <span class="float-right"><small>(Feb‘20- Mar'20)</small></span>
+                        </p>
+                        <p>
+                            A covid-19 tracking website with live stats on people affected, confirmed cases etc 
+                            with charts for visual  representation.
+                        </p>
                     </div>
-                    <div class="contactIcon">
-                        
+                    <div class="project-card">
+                        <p> 
+                            <span class="designation">URL Shortener- <a href="https://snehashish.pythonanywhere.com/" target="_blank">LIVE</a></span><br>
+                            <span class="comp-name">Tech Stack- Python, Flask, HTML, Bootstrap, Javascript</span>
+                            <span class="float-right"><small>(May'20)</small></span>
+                        </p>
+                        <p>
+                            A website that shortens long URL.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <p> 
+                            <span class="designation">Codeplayer - <a href="https://snehashish.me/codeplayer/" target="_blank">LIVE</a></span><br>
+                            <span class="comp-name">Tech Stack- HTML, CSS, JQuery</span>
+                            <span class="float-right"><small>(Dec‘20)</small></span>
+                        </p>
+                        <p>
+                            A web application where users can write HTML, CSS and JavaScript code and output will be displayed.
+                        </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </div>        
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script type="text/javascript">
+    <script>
+        function mob_men_toggle_menu()
+        {
+            if($("#mobile_menu").is(":hidden"))
+                $("#mobile_menu").show()
+            else
+                $("#mobile_menu").hide()
+        }
 
-        AOS.init({
-            duration: 1000,
-        });
+        function goto_ele(ele_id)
+        {            
+            $('html, body').animate({
+                scrollTop: $("#"+ele_id).offset().top-150
+            }, 1000);
 
-        $(document).ready(function () {
-            myfunc();
-        });
-
-
-        var i = 0;
-        var txt = ["web developer", "Student", "Programmer", "Gamer"];
-        var speed = 1000;
-        function myfunc() {
-            if (i < txt.length) {
-                document.getElementById("changing").innerHTML = txt[i];
-                i++;
-                setTimeout(myfunc, speed);
-            }
-            if (i == txt.length) { i = 0; }
-        }     
+            $("#mobile_menu").hide()
+        }
     </script>
 </body>
-
 </html>
