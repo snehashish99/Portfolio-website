@@ -1,9 +1,9 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --backgroundColor: #ADADAD;
-        --themeLight: #64495C;
-        --themeLighter: #83687B;
-        --textColor: black;
+        --backgroundColor: #389583;
+        --themeLight: #95bfa3;
+        --themeLighter: #8DE4AF;
+        --textColor: #05396B;
     }
 }
 @media (prefers-color-scheme: dark) {  
@@ -60,7 +60,7 @@ body {
 }
 
 .card-extra{
-    background-color: var(--themeLighter); 
+    background-color: var(--themeLight); 
     padding: 0.5vh;
     margin: 3vh 0vh 3vh 0vh;
 }
