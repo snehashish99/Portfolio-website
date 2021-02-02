@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Snehashish Kalamkar Portfolio Website, My skills, experience, projects etc.">
+    <meta name="keywords" content="Snehashish, Kalamkar, Website, Portfolio">
+    <meta name="author" content="Snehashish Kalamkar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehashish Kalamkar</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <div id="topbar">
+            <nav>
+                <!-- Brand -->
+              
+                <!-- Toggler/collapsibe Button -->
+                <div>
+                    <div class="text-center">
+                        <span><i onclick="mob_men_toggle_menu()" class="fas fa-bars fa-2x" style="margin:10px;cursor:pointer;"></i></span>
+                    </div>
+                </div>
+              
+                <!-- Navbar links -->
+                <div id="mobile_menu" style="z-index:100;display: none;position: absolute;width: 100%;">
+                  <ul>
+                    <li onclick="goto_ele('about')">About</li>
+                    <li onclick="goto_ele('experience')">Experience</li>
+                    <!--<li onclick="goto_ele('education')">Education</li>-->
+                    <li onclick="goto_ele('skills')">Skill</li>                    
+                    <li onclick="goto_ele('projects')">Projects</li>
+                  </ul>
+                </div>
+            </nav>                  
+        </div>
+                    
+        <div class="d-flex">
+            <div class="left w-25 flex-fill text-center">
+                <div class="left-cen">
+                    <ul>
+                        <li onclick="goto_ele('about')">About</li>
+                        <li onclick="goto_ele('experience')">Experience</li>                        
+                        <!--<li onclick="goto_ele('education')">Education</li>-->
+                        <li onclick="goto_ele('skills')">Skill</li>
+                        <li onclick="goto_ele('projects')">Project</li>
+                    </ul>
+                    <br><br>
+                    <div>
+                        <span class="left-icon"><a style="color: inherit;" href="https://www.linkedin.com/in/snehashish-kalamkar-155838167/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>
+                        <span class="left-icon"><a style="color: inherit;" href="https://github.com/snehashish99"  target="_blank"><i class="fab fa-github fa-2x"></i></a></span>
+                    </div>
+                </div>                
+            </div>
+            <div class="right w-75 flex-fill text-left p-4">  
+                <div class="text-center">
+                    <h1>SNEHASHISH KALAMKAR</h1>
+                    <h5>4th YEAR UNDERGRAD | WEB DEVELOPER | CODER</h5>
+                </div>
+                <br>
+                <div id="about" name="about">
+                    <p>
+                        I am a final year CSE undergraduate. My objectives are to build skills and gain experience
+                        through different avenues. I am always excited to learn new skills and quickly adapt myself
+                        to a new environment. I love web development.
+                    </p>
+                </div>
+                <div id="experience">
+                    <h3>EXPERIENCE</h3>
+                    <div class="experience-card">
+                        <p> 
+                            <span class="designation">Web Developer Intern(Fullstack)</span><br>
+                            <span class="comp-name">Reading Right</span>
+                            <span class="float-right"><small>(May‘20- Present)</small></span>
+                        </p>
+                        <p>
+                            Along with a team, I worked on both the frontend and backend to add new features and update 
+                            existing features on the content portal of the website.
+                        </p>
+                    </div>
+                    <div class="experience-card">
+                        <p> 
+                            <span class="designation">Project Intern</span><br>
+                            <span class="comp-name">Openhouse</span>
+                            <span class="float-right"><small>(Feb‘20- Mar‘20)</small></span>
+                        </p>
+                        <p>
+                            I worked on the analytics part of the website for the admin. Used various javascript charting
+                             libraries for meaning representation of data.
+                        </p>
+                    </div>
+                </div>
+                <!--<div id="education">
+                    <h3>EDUCATION</h3>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kalyani Government Engineering College</span><br>
+                            <span class="comp-name">B.Tech. in Computer Science & Engineering(8.4/10)</span>
+                            <span class="float-right"><small>(2017- 2021)</small></span>
+                        </p>
+                    </div>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kendriya Vidyalaya No.2, Salt Lake</span><br>
+                            <span class="comp-name">Class 12 (CBSE) 92.7%</span>
+                            <span class="float-right"><small>(2017)</small></span>
+                        </p>
+                    </div>
+                    <div class="education-card">
+                        <p> 
+                            <span class="designation">Kendriya Vidyalaya No.2, Salt Lake</span><br>
+                            <span class="comp-name">Class 10 (CBSE) 10 CGPA</span>
+                            <span class="float-right"><small>(2015)</small></span>
+                        </p>
+                    </div>
+                </div>-->
+                <div id="skills">
+                    <h3>SKILLS</h3>
+                    <div>
+                        <div>
+                            <h6>Programming Languages</h6>
+                            <br>
+                            <span class="skill-icon"><i class="fab fa-cuttlefish fa-2x">++</i></span>
+                            <span class="skill-icon"><i class="fab fa-python fa-2x"></i></span>
+                            <span class="skill-icon"><i class="fab fa-js-square fa-2x"></i></span>
+                        </div>
+                        <br><br>
+                        <div>
+                            <h6>Web</h6>
+                            <br>
+                            <span class="skill-text">Django</span>
+                            <span class="skill-text">JQuery</span>
+                            <span class="skill-text">Flask</span>
+                            <span class="skill-text">CSS</span>
+                            <span class="skill-text">HTML</span>
+                            <span class="skill-text">Bootstrap</span>
+                            <span class="skill-text">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects">
+                    <h3>PROJECTS</h3>
+                    <div class="project-card">
+                        <p> 
+                            <span class="project-name">COVID Tracker</span>- <a href="http://covid.snehashish.me/" target="_blank"><b>LIVE</b></a><br>
+                            <span class="comp-name">Tech Stack- Python, HTML, Bootstrap, Javascript</span>
+                            <span class="float-right"><small>(Feb‘20- Mar'20)</small></span>
+                        </p>
+                        <p>
+                            A covid-19 tracking website with live stats on people affected, confirmed cases etc 
+                            with charts for visual  representation.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <p> 
+                            <span class="project-name">URL Shortener</span>- <a href="https://snehashish.pythonanywhere.com/" target="_blank"><b>LIVE</b></a><br>
+                            <span class="comp-name">Tech Stack- Python, Flask, HTML, Bootstrap, Javascript</span>
+                            <span class="float-right"><small>(May'20)</small></span>
+                        </p>
+                        <p>
+                            A website that shortens long URL.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <p> 
+                            <span class="project-name">Codeplayer</span> - <a href="https://snehashish.me/codeplayer/" target="_blank"><b>LIVE</b></a><br>
+                            <span class="comp-name">Tech Stack- HTML, CSS, JQuery</span>
+                            <span class="float-right"><small>(Dec‘20)</small></span>
+                        </p>
+                        <p>
+                            A web application where users can write HTML, CSS and JavaScript code and output will be displayed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <script>
+        function mob_men_toggle_menu()
+        {
+            if($("#mobile_menu").is(":hidden"))
+                $("#mobile_menu").show()
+            else
+                $("#mobile_menu").hide()
+        }
+
+        function goto_ele(ele_id)
+        {            
+            $('html, body').animate({
+                scrollTop: $("#"+ele_id).offset().top-150
+            }, 1000);
+
+            $("#mobile_menu").hide()
+        }
+    </script>
+</body>
+</html>

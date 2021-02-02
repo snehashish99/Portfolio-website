@@ -1,125 +1,147 @@
-:root {
-    --theme: #B75A36;
-    --background: #F7F7F7;
-    --fullwidth: 100%;
+@media (prefers-color-scheme: light) {
+    :root {
+        --backgroundColor: #ADADAD;
+        --themeLight: #64495C;
+        --themeLighter: #83687B;
+        --textColor: black;
+    }
+}
+@media (prefers-color-scheme: dark) {  
+    :root {
+        --backgroundColor: #1A202C;
+        --themeLight: #2D3848;
+        --themeLighter: #3A4556;
+        --textColor: #ffffff;
+    }      
 }
 
-h1{
-    font-family: "Lucida Console", Courier, monospace;
+body {
+    background-color: var(--backgroundColor); 
+    color: var(--textColor);   
+    padding: 3vh;     
+} 
+
+.intro{
+    margin: 8vh 1vh 15vh 1vh;
+    height: 80vh;
 }
 
-h5{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+.salutation{
+    margin: 3vh 6vh 3vh 6vh;
 }
 
-#about, #experience, #education, #skills{
-    margin: 0px 0px 70px 0px;
+.intro-head{
+    margin: 6vh 0vh 6vh 0vh;
 }
 
-ul{
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
+.intro-p{
+    margin: 3vh 0vh 3vh 0vh;
 }
 
-li{
+.intro-img{
+    margin: 20vh 10vh 5vh 10vh;
+}
+
+.butt{
+    height: 50px; 
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    border: blueviolet 2px solid;
+    border-color: blueviolet;    
+}
+
+.butt:hover{
+    background-color: blueviolet;
+    color: black;
+    -webkit-transition: blueviolet 1000ms linear;
+    -ms-transition: blueviolet 1000ms linear;
+    transition: blueviolet 1000ms linear;
+}
+
+.card-extra{
+    background-color: var(--themeLighter); 
+    padding: 0.5vh;
+    margin: 3vh 0vh 3vh 0vh;
+}
+
+.art-head{
+    margin: 6vh 0vh 6vh 0vh;
+}
+
+.art-item{
+    display:inline-block;
+    border-left: var(--backgroundColor) 2px solid;  
+    background-color: var(--themeLight);     
+    margin: 3vh;
+    padding: 2vh;
+    border-radius: 1vh;        
+}
+
+.art-item:hover{
+    background-color: var(--themeLighter);
+    border-left: chartreuse 2px solid;
     cursor: pointer;
 }
 
-.comp-name{
-    color: gray;
-    font-weight: bold;
+.art-link{    
+    color: inherit;
+    text-decoration: none;
+}
+.art-link:hover{    
+    color: inherit;
+    text-decoration: none;
 }
 
-.designation{
-    font-weight: bold;
+.project-col{
+    padding: 0vh 1vh 0vh 1vh;
 }
 
-.skill-icon{
-    margin: 20px;
+.card-body{
+    padding: 2vh 5vh 2vh 5vh;
 }
 
-.left-icon{
-    color: #212529;
-    margin: 10px;
+.project-img-parent{
+    height: 300px;
+    position: relative;
 }
 
-.skill-text{
-    display: inline-block;
+.project-img-parent:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--themeLight);
+}
+
+.project-overlay-text {
     color: white;
-    background-color: #212529;
-    padding: 6px;
-    border-radius: 9px;
-    margin: 10px;
-}
-
-.project-name{
-    font-weight: bold;
-}
-
-.experience-card{
-    margin: 10px 0px 40px 0px;
-}
-
-.education-card{
-    margin: 10px 0px 40px 0px;
-}
-
-.project-card{
-    margin: 10px 0px 40px 0px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f2eded;
-}
-
-.left-cen{
-    position: fixed;
-    left: 10%;
+    font-size: 20px;
+    position: absolute;
     top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.left-cen li {
-    padding: 20px 20px 0px 20px;
-    margin: 10px;
-    border-bottom: white 2px solid;
-    font-size: larger;
+.card-img-top{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-#mobile_menu li {
-    padding: 20px 20px 0px 20px;
-    margin: 10px;
-    border-bottom: white 2px solid;
-    font-size: larger;
+.footer{
+    padding: 3vh;
 }
-.left-cen li:hover{
-    background-color: wheat;
-}
-
-.left{
-    background-color: var(--theme);
-}
-
-.right{
-    background-color: var(--background);
-}
-
-#topbar {
-    display: none;
-    background-color: var(--theme);
-}
-
-#mobile_menu{
-    background-color: var(--theme);
-}
-
-@media only screen and (max-width: 800px) {
-    #topbar {
-      display: block;
-      background-color: var(--theme);      
-    }
-
-    .left{
-        display:none;
-    }
-  }
