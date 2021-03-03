@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
     :root {
         --backgroundColor: #389583;
         --themeLight: #95bfa3;
@@ -12,8 +12,15 @@
         --themeLight: #2D3848;
         --themeLighter: #3A4556;
         --textColor: #ffffff;
-    }      
-}
+    } 
+}*/
+
+:root {
+    --backgroundColor: #1A202C;
+    --themeLight: #2D3848;
+    --themeLighter: #3A4556;
+    --textColor: #ffffff;
+} 
 
 body {
     background-color: var(--backgroundColor); 
